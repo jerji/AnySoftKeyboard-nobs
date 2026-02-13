@@ -415,16 +415,17 @@ public abstract class AnySoftKeyboard extends AnySoftKeyboardColorizeNavBar {
 
     switch (primaryCode) {
       case KeyCodes.DELETE:
-        if (ic != null) {
+        break;
+        //if (ic != null) {
           // we do back-word if the shift is pressed while pressing
           // backspace (like in a PC)
-          if (mUseBackWord && mShiftKeyState.isPressed() && !mShiftKeyState.isLocked()) {
-            handleBackWord(ic);
-          } else {
-            handleDeleteLastCharacter(false);
-          }
-        }
-        break;
+          //if (mUseBackWord && mShiftKeyState.isPressed() && !mShiftKeyState.isLocked()) {
+            //handleBackWord(ic);
+          //} else {
+            //handleDeleteLastCharacter(false);
+          //}
+        //}
+        //break;
       case KeyCodes.SHIFT:
         if (fromUI) {
           handleShift();
