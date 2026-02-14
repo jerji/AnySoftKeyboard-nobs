@@ -440,22 +440,22 @@ public abstract class AnySoftKeyboard extends AnySoftKeyboardColorizeNavBar {
         handleShift();
         break;
       case KeyCodes.DELETE_WORD:
-        if (ic != null) {
-          handleBackWord(ic);
-        }
+        //if (ic != null) {
+          //h//andleBackWord(ic);
+        //}
         break;
       case KeyCodes.FORWARD_DELETE:
-        if (ic != null) {
-          handleForwardDelete(ic);
-        }
+        //if (ic != null) {
+          //handleForwardDelete(ic);
+        //}
         break;
       case KeyCodes.CLEAR_INPUT:
-        if (ic != null) {
-          ic.beginBatchEdit();
-          abortCorrectionAndResetPredictionState(false);
-          ic.deleteSurroundingText(Integer.MAX_VALUE, Integer.MAX_VALUE);
-          ic.endBatchEdit();
-        }
+        //if (ic != null) {
+          //ic.beginBatchEdit();
+          //abortCorrectionAndResetPredictionState(false);
+          //ic.deleteSurroundingText(Integer.MAX_VALUE, Integer.MAX_VALUE);
+          //ic.endBatchEdit();
+        //}
         break;
       case KeyCodes.CTRL:
         if (fromUI) {
